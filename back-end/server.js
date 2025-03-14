@@ -2,6 +2,11 @@
 
 // main server file
 
+//Server starting Aknowledgement
+let date = new Date();
+console.log(date.toTimeString());
+console.log("Running...");
+
 const express = require('express');
 
 const cors = require('cors');

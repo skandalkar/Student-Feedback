@@ -5,7 +5,7 @@
 //Server starting Aknowledgement
 let date = new Date();
 console.log(date.toTimeString());
-console.log("Running...");
+console.log("\nRunning...\n");
 
 const express = require('express');
 

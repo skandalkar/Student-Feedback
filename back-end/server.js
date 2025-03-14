@@ -18,7 +18,7 @@ connectDB();
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use('/api/feedback', feedbackRoutes);
+app.use('/feedback', feedbackRoutes);
 
 
-app.listen(process.env.PORT, () => console.log(`Server running on port ${process.env.PORT}`));
+app.listen(process.env.portNo, () => console.log(`Server running on port ${process.env.portNo}`));

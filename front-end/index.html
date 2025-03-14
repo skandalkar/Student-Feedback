@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Student Feedback Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>Student Feedback Form</h1>
 
     <form id="feedbackForm">
+        
         <input type="text" id="studentName" placeholder="Student Name" required>
         <input type="text" id="rollNumber" placeholder="Roll Number" required>
+        <br>
+
+        <ul type="none">
+            <li>1 for Poor</li>
+            <li>2 for Fair</li>
+            <li>3 for Good</li>
+            <li>4 for Very Good</li>
+            <li>5 for Excellent</li>
+        </ul>
 
         <h3>Theory Subjects</h3>
         <input type="number" id="subject1" placeholder="Subject 1" min="1" max="5" required>
         <input type="number" id="subject2" placeholder="Subject 2" min="1" max="5" required>
+        <input type="number" id="subject3" placeholder="Subject 3" min="1" max="5" required>
+        <input type="number" id="subject4" placeholder="Subject 4" min="1" max="5" required>
+        <input type="number" id="subject5" placeholder="Subject 5" min="1" max="5" required>
+
+
+        <h3>Practical Subjects</h3>
+        <input type="number" id="practical1" placeholder="practical 1" min="1" max="5" required>
+        <input type="number" id="practical2" placeholder="practical 2" min="1" max="5" required>
+        <input type="number" id="practical3" placeholder="practical 3" min="1" max="5" required>
+
+        <h3>Feedback</h3>
+        <textarea id="feedback" placeholder="Feedback" required></textarea>
+        <br>
 
         <button type="submit">Submit</button>
     </form>
@@ -24,4 +49,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

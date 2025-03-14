@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 250px;
+    margin: 10px auto;
+}
+
+button {
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: none;
+}

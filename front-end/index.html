@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Feedback Form</h1>
+
+    <form id="feedbackForm">
+        <input type="text" id="studentName" placeholder="Student Name" required>
+        <input type="text" id="rollNumber" placeholder="Roll Number" required>
+
+        <h3>Theory Subjects</h3>
+        <input type="number" id="subject1" placeholder="Subject 1" min="1" max="5" required>
+        <input type="number" id="subject2" placeholder="Subject 2" min="1" max="5" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Feedback List</h2>
+    <ul id="feedbackList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

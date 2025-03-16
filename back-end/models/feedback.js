@@ -3,8 +3,19 @@ const mongoose = require('mongoose');
 
 const feedbackSchema = new mongoose.Schema(
     {
-        studentName: String,
-        rollNumber: Number,
+        // studentName: String,
+        // rollNumber: Number,
+
+        studentName: {
+            type: String,
+            required: true
+        }, 
+        
+        rollNumber: {
+            type: Number, 
+            required: true,
+            unique: true
+        },
 
         subjects: {
             subject1: Number,
